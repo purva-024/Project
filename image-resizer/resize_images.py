@@ -7,10 +7,10 @@ INPUT_FOLDER = Path("input")
 OUTPUT_FOLDER = Path("output")
 OUTPUT_FOLDER.mkdir(exist_ok=True)
 
-# === Get the first image from input/ ===
-input_images = list(INPUT_FOLDER.glob("*.*"))
+# === Get the first .jpg or .jpeg image from input/ ===
+input_images = list(INPUT_FOLDER.glob("*.jpg")) + list(INPUT_FOLDER.glob("*.jpeg"))
 if not input_images:
-    print("❌ No image found in 'input/' folder.")
+    print("❌ No JPG/JPEG image found in 'input/' folder.")
     exit()
 
 input_path = input_images[0]
