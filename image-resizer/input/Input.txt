@@ -1,0 +1,2 @@
+This File is created in order to ensure folder structure remains in github. 
+You need to upload you jpg file in this folder so that script will work and give you resized image in output folder. 
